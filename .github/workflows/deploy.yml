@@ -18,7 +18,7 @@ jobs:
         run: npm run build
 
       - name: "Publish"
-        uses: "JamesIves/github-pages-deploy-action@v4"
+        uses: "JamesIves/github-pages-deploy-action@v4.3.3"
         with:
           branch: gh-pages
           folder: build
