@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Glossa
 
-[GitHub](https://github.com/aecsocket/glossa) | [Dokka](pathname:///glossa/dokka)
+[GitHub](https://github.com/aecsocket/glossa) | [Dokka](pathname:///glossa/dokka/index.html)
 
 ---
 
