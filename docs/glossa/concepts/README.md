@@ -35,7 +35,7 @@ You now have 184 followers.
 
 :::tip
 
-You can find a more complete guide on ICU features on the [ICU format](icu) page.
+You can find a more complete guide on ICU features on the [ICU format](concepts/icu) page.
 This should be read by both users and developers!
 
 :::
