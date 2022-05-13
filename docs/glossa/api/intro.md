@@ -6,6 +6,12 @@ sidebar_position: 1
 
 Introduction to the API.
 
+:::info
+
+The Dokka documentation is available from [the external Dokka link here](/glossa).
+
+:::
+
 ## I18N
 
 The core of the API is the `I18N<T, A>` class.

@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Glossa
 
+[GitHub](https://github.com/aecsocket/glossa) | [Dokka](pathname:///glossa/dokka)
+
+---
+
 ICU-based localization library.
 
 Glossa provides a way for developers to both localize and configure messages in the same format string. It's written in Kotlin, allowing it to be used on the JVM while still having interop with Java code.
