@@ -4,7 +4,11 @@ sidebar_position: 1
 
 # Setup
 
-**Get the current version [here](https://github.com/aecsocket/glossa)**
+:::tip
+
+Find the current version [here](https://github.com/aecsocket/glossa).
+
+:::
 
 ## Gradle - Kotlin DSL - Version catalog
 
@@ -20,7 +24,7 @@ glossa = { group = "com.github.aecsocket", name = "glossa-[MODULE]", version.ref
 
 `build.gradle.kts`
 
-```kotlin
+```kt
 repositories {
     maven("https://jitpack.io")
 }

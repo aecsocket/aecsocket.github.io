@@ -13,6 +13,21 @@ This document aims to provide a simpler guide to ICU than is available elsewhere
 
 You can find ICU documentation on https://unicode-org.github.io/icu/userguide/.
 
+## Templates
+
+A template is a block in your format that will be replaced by an argument specified from code.
+
+```icu-message-format
+New messages: {new_messages, number}
+```
+
+The `{new_messages, number} block will be replaced by whatever value is passed in:
+
+using `new_messages = 5`:
+```
+New messages: 5
+```
+
 ## Types
 
 When defining a template, you can optionally define what type of value it will be displayed
@@ -38,12 +53,12 @@ Define how many decimal places the number will be formatted up to, handling roun
 Result of calculation: {result, number, .00}
 ```
 
-using `12.7777`:
+using `result = 12.7777`:
 ```
 Result of calculation: 12.78
 ```
 
-using `12`:
+using `result = 12`:
 ```
 Result of calculation: 12.00
 ```
@@ -57,6 +72,7 @@ Format the number as a percentage - numbers between 0 and 1 will be converted to
 Progress: {progress, number, %}
 ```
 
+using `progress = 0.5`
 ```
 Progress: 50%
 ```
@@ -69,18 +85,21 @@ Format the number as a unit.
 This item is {length, number, unit/meter} long
 ```
 
+using `length = 5`
 ```
 This item is 5 m long
 ```
 
 #### Currency
 
-Format the number as a specified currency.
+Format the number as a specified currency. Note that this does *not* do currency conversions,
+just formats a number as the currency.
 
 ```icu-message-format
 This item costs {cost, number, currency/CAD}
 ```
 
+using `cost = 10`
 ```
 This item costs CA$10.00
 ```
@@ -136,12 +155,12 @@ You can change the output depending on the text value of another argument:
 
 Depending on the value passed to `user_gender`, a different message is used here:
 
-`user_gender = "male"`
+using `user_gender = "male"`
 ```
 SomeMaleUser just joined a game, join him!
 ```
 
-`user_gender = "female"`
+using `user_gender = "female"`
 ```
 SomeFemaleUser just joined a game, join her!
 ```
@@ -156,12 +175,12 @@ You entered {world_type, select,
 } world!
 ```
 
-`world_type = "easy"`
+using `world_type = "easy"`
 ```
 You entered an Easy world!
 ```
 
-`world_type = "Impossible"`
+using `world_type = "Impossible"`
 ```
 You entered the Impossible world!
 ```

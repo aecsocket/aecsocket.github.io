@@ -103,23 +103,33 @@ into an existing translation:
 
 **Format**
 ```icu-message-format
-You received: @<item>[
+You received: @<items>[
   - @$<item_name>]
 ```
 
 **Arguments**
 ```json
-{ "item": [
-  { "item_name": "(..result of another localization operation)" },
-  { "item_name": "(..result of another localization operation)" }
+{ "items": [
+  { "item_name": "(..defined below)" },
+  { "item_name": "(..defined below)" }
 ] }
+```
+
+```kt
+i18n["message.receive.item", argMap(
+  "items" argList {listOf(argMap(
+    "item_name" argSub {listOf(Component.text("The Red Item", NamedTextColor.RED))}
+  ), argMap(
+    "item_name" argSub {listOf(Component.text("The Blue Item", NamedTextColor.BLUE))}
+  ))}
+)]
 ```
 
 **Result**
 ```
 You received:
- - Item Foo
- - Item Bar
+ - <red>The Red Item
+ - <blue>The Blue Item
 ```
 
 From the API, you can even directly insert `Localizable` instances:
@@ -131,10 +141,11 @@ data class Item(val id: String) : Localizable<String> {
 Item("foo").localize() // -> [ "Item Foo" ]
 Item("bar").localize() // -> [ "Item Bar" ]
 
-i18n["message_key", argMap(
-    "item" argList {listOf(
-        argTl(Item("foo")), // uses .localize
-        argTl(Item("bar"))
+i18n["message.receive.item", argMap(
+    "items" argList {listOf(argMap(
+        "item_name" argTl {Item("foo")}, // uses .localize
+      ), argMap(
+        "item_name" argTl {Item("bar")}
     )}
 )]
 ```
