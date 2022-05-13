@@ -14,13 +14,11 @@ However, **internationalization (I18N)** services provided by Glossa will do pro
 to add features like **scopes** and **substitutions**.
 
 ```json
-{
-  "followers.added": [
-    "On {date, date, short}, {follower} started following you.",
-    "You now have {total, number} followers."
-  ],
-  "error.generic": "This action failed. Please try again."
-}
+"followers.added": [
+  "On {date, date, short}, {follower} started following you."
+  "You now have {total, number} followers."
+]
+"error.generic": "This action failed. Please try again."
 ```
 
 The blocks `{date, ...}`, `{follower}`, `{total, ...}` are **templates** - parts which are

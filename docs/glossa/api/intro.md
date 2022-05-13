@@ -225,3 +225,66 @@ i18n["cart.items_list", argMap(
 //   "  - Table x2"
 // ]
 ```
+
+## Naming convention
+
+* In message keys:
+  * Use `a-z0-9_` for individual segments
+  * Use `.` as a separator between categories
+  * Use the singular form for categories
+    * Use plural form for the ending segment, if it represents multiple values
+  * Examples
+    * `message.chat.incoming_message`
+    * `message.chat.outgoing_messages`
+* In argument keys:
+  * Use only `a-z0-9_`
+  * For arguments representing a single value, use the singular form
+  * For iterable arguments (e.g. `argList`s), use the plural form
+  * Examples
+    * `item_name` : template argument
+    * `cart_items` : argument list
+
+## Loading from an external source
+
+You can load translations into a `MutableI18N` using the extension function
+`MutableI18N.loadTranslations`. This takes a `ConfigurationLoader` from
+[Configurate](https://github.com/spongepowered/configurate), which determines how to
+load a string/file/stream/etc. into the translation.
+
+The recommended format to load in is [HOCON](https://github.com/lightbend/config).
+
+To add `configurate-hocon` to your project, follow the instructions on
+[the Configurate repo](https://github.com/spongepowered/configurate).
+
+```kt
+i18n.loadTranslations(HoconConfigurationLoader.builder()
+  .source { BufferedReader(StringReader("""
+    # This defines for what locale the translation is made
+    __locale__: en-US
+    # You should always quote keys
+    # Otherwise, `friend.requests` will be interpreted as a `requests` map inside a `friend` map
+    "hello_world": "Hello world!"
+    "friend.requests": [
+      "Friend requests: {total, number} @<requests>[
+        {name}]"
+    ]
+  """.trimIndent())) }
+  .build())
+
+i18n["hello_world"]
+// -> [ "Hello world!" ]
+```
+
+To load from a file:
+
+```kt
+val file = File("formats.conf")
+val path = Path("formats.conf")
+
+i18n.loadTranslations(HoconConfigurationLoader.builder()
+  // you can use either one of:
+  .file(file)
+  .path(path)
+  
+  .build())
+```

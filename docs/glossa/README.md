@@ -31,7 +31,7 @@ You have {items, plural, one {# item} other {# items}} in your cart
 
 **Arguments**
 ```json
-{ "items": 1 }
+items: 1
 ```
 
 **Result**
@@ -41,7 +41,7 @@ You have 1 item in your cart
 
 **Arguments**
 ```json
-{ "items": 3 }
+items: 3
 ```
 
 **Result**
@@ -65,11 +65,11 @@ Your purchases: @<purchases>[
 
 **Arguments**
 ```json
-{ "purchases": [
-  { "item": "Alpha", "amount": 3 },
-  { "item": "Beta",  "amount": 2 },
-  { "item": "Gamma", "amount": 5505 }
-] }
+purchases: [
+  { item: "Alpha", amount: 3 }
+  { item: "Beta",  amount: 2 }
+  { item: "Gamma", amount: 5505 }
+]
 ```
 
 **Result**
@@ -89,10 +89,10 @@ Authors: @<authors>[{name} ({social_media_handle})][, ]
 
 **Arguments**
 ```json
-{ "authors": [
-  { "name": "AuthorOne", "social_media_handle": "@authorone" },
-  { "name": "AuthorTwo", "social_media_handle": "@authortwo" }
-] }
+authors: [
+  { name: "AuthorOne", social_media_handle: "@authorone" }
+  { name: "AuthorTwo", social_media_handle: "@authortwo" }
+]
 ```
 
 **Result**
@@ -113,10 +113,10 @@ You received: @<items>[
 
 **Arguments**
 ```json
-{ "items": [
-  { "item_name": "(..defined below)" },
-  { "item_name": "(..defined below)" }
-] }
+items: [
+  { item_name: (..defined below) }
+  { item_name: (..defined below) }
+]
 ```
 
 ```kt
