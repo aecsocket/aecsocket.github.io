@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>StylingI18N</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>glossa</span>            </a>    </div>
+    <div>0.2.1-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="glossa-adventure::com.github.aecsocket.glossa.adventure/StylingI18N///PointingToDeclaration//-1448669842">
+  <div class="breadcrumbs"><a href="../../index.html">glossa-adventure</a><span class="delimiter">/</span><a href="../index.html">com.github.aecsocket.glossa.adventure</a><span class="delimiter">/</span><a href="index.html">StylingI18N</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Styling</span><wbr><span><span>I18N</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">StylingI18N</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token operator"> = </span>Locale.ROOT<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>miniMessage<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.minimessage/MiniMessage///PointingToDeclaration/">MiniMessage</span><span class="token operator"> = </span>MiniMessage.miniMessage()</span></span><span class="token punctuation">)</span> : <a href="../-adventure-i18-n/index.html">AdventureI18N</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">I18N service which uses <a href="../-styling-format/index.html">StylingFormat</a>s and <span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span>s to localize into Adventure <span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span>s.</p><p class="paragraph">For <a href="../../../glossa-adventure/com.github.aecsocket.glossa.adventure/-styling-i18-n/safe.html">safe</a> calls, returns a list with the key passed as a <span data-unresolved-link="net.kyori.adventure.text/TextComponent///PointingToDeclaration/">net.kyori.adventure.text.TextComponent</span>.</p><p class="paragraph">The steps taken for localization are:</p><ol><li><p class="paragraph">Look up the format string for the given locale and key, using fallback locale if needed</p></li><li><p class="paragraph">(Cached) Convert the format string to a <a href="../../../glossa-core/com.github.aecsocket.glossa.core/-template-node/index.html">TemplateNode</a> representation</p></li><li><p class="paragraph">Using the <a href="../../../glossa-core/com.github.aecsocket.glossa.core/-templating-i18-n/-argument-map/index.html">ArgumentMap</a> and <a href="../../../glossa-core/com.github.aecsocket.glossa.core/-template-node/index.html">TemplateNode</a>, generate the lines of <a href="../../../glossa-core/com.github.aecsocket.glossa.core/-format-token/index.html">FormatToken</a>s.</p></li><li><p class="paragraph">For each string token, it is parsed through <a href="mini-message.html">miniMessage</a>'s <span data-unresolved-link="net.kyori.adventure.text.minimessage/MiniMessage/deserialize/#kotlin.String#net.kyori.adventure.text.minimessage.tag.resolver.TagResolver/PointingToDeclaration/">MiniMessage.deserialize</span>.</p></li><li><p class="paragraph">For each raw token, it is added to the result.</p></li></ol></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-188484749%2FConstructors%2F-1448669842" anchor-label="StylingI18N" id="-188484749%2FConstructors%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-styling-i18-n.html"><span>Styling</span><wbr><span><span>I18N</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-188484749%2FConstructors%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-styling-i18-n.html"><span class="token function">StylingI18N</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token operator"> = </span>Locale.ROOT<span class="token punctuation">, </span></span><span class="parameter ">miniMessage<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.minimessage/MiniMessage///PointingToDeclaration/">MiniMessage</span><span class="token operator"> = </span>MiniMessage.miniMessage()</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-694379209%2FFunctions%2F-1448669842" anchor-label="clear" id="-694379209%2FFunctions%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-694379209%2FFunctions%2F-1448669842"><span><span>clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-694379209%2FFunctions%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-694379209%2FFunctions%2F-1448669842"><span class="token function">clear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="189069723%2FFunctions%2F-1448669842" anchor-label="get" id="189069723%2FFunctions%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#917858742%2FFunctions%2F-1448669842"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="189069723%2FFunctions%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="index.html#917858742%2FFunctions%2F-1448669842"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="index.html#-517132823%2FFunctions%2F-1448669842"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">args<span class="token operator">: </span><a href="../../../glossa-core/com.github.aecsocket.glossa.core/-templating-i18-n/-argument-map/index.html">TemplatingI18N.ArgumentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="index.html#2046272665%2FFunctions%2F-1448669842"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;args<span class="token operator">: </span><a href="../../../glossa-core/com.github.aecsocket.glossa.core/-templating-i18-n/-argument-map/index.html">TemplatingI18N.ArgumentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span><span class="token annotation">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation">NotNull</span></span>&nbsp;</span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1620661565%2FFunctions%2F-1448669842" anchor-label="register" id="1620661565%2FFunctions%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-1483963969%2FFunctions%2F-1448669842"><span><span>register</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1620661565%2FFunctions%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1483963969%2FFunctions%2F-1448669842"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tl<span class="token operator">: </span><a href="../../../glossa-core/com.github.aecsocket.glossa.core/-translation/index.html">Translation</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#705921744%2FFunctions%2F-1448669842"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>tl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1903014423%2FFunctions%2F-1448669842" anchor-label="safe" id="1903014423%2FFunctions%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1024803547%2FFunctions%2F-1448669842"><span><span>safe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1903014423%2FFunctions%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1024803547%2FFunctions%2F-1448669842"><span class="token function">safe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2041426468%2FFunctions%2F-1448669842"><span class="token function">safe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">args<span class="token operator">: </span><a href="../../../glossa-core/com.github.aecsocket.glossa.core/-templating-i18-n/-argument-map/index.html">TemplatingI18N.ArgumentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#792369684%2FFunctions%2F-1448669842"><span class="token function">safe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-adventure-i18-n/safe.html"><span class="token function">safe</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;locale<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;args<span class="token operator">: </span><a href="../../../glossa-core/com.github.aecsocket.glossa.core/-templating-i18-n/-argument-map/index.html">TemplatingI18N.ArgumentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text/Component///PointingToDeclaration/">Component</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1955837888%2FProperties%2F-1448669842" anchor-label="formats" id="-1955837888%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="formats.html">formats</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1955837888%2FProperties%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><a data-name="-1955837888%2FProperties%2F-1448669842" anchor-label="formats" id="-1955837888%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="formats.html">formats</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html">HashMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-styling-format/index.html">StylingFormat</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1183164679%2FProperties%2F-1448669842" anchor-label="locale" id="1183164679%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1183164679%2FProperties%2F-1448669842">locale</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1183164679%2FProperties%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><a data-name="1183164679%2FProperties%2F-1448669842" anchor-label="locale" id="1183164679%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="index.html#1183164679%2FProperties%2F-1448669842">locale</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">Locale</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1132632812%2FProperties%2F-1448669842" anchor-label="miniMessage" id="1132632812%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="mini-message.html">miniMessage</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1132632812%2FProperties%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><a data-name="1132632812%2FProperties%2F-1448669842" anchor-label="miniMessage" id="1132632812%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="mini-message.html">miniMessage</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.minimessage/MiniMessage///PointingToDeclaration/">MiniMessage</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="401799388%2FProperties%2F-1448669842" anchor-label="styles" id="401799388%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="styles.html">styles</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="401799388%2FProperties%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><a data-name="401799388%2FProperties%2F-1448669842" anchor-label="styles" id="401799388%2FProperties%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="styles.html">styles</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html">HashMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-929259002%2FExtensions%2F-1448669842" anchor-label="loadStyling" id="-929259002%2FExtensions%2F-1448669842" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":glossa-adventure:dokkaHtmlPartial/main" data-filterable-set=":glossa-adventure:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../load-styling.html"><span>load</span><wbr><span><span>Styling</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-929259002%2FExtensions%2F-1448669842"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":glossa-adventure:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">StylingI18N</a><span class="token punctuation">.</span><a href="../load-styling.html"><span class="token function">loadStyling</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loader<span class="token operator">: </span><span data-unresolved-link="org.spongepowered.configurate.loader/ConfigurationLoader///PointingToDeclaration/">ConfigurationLoader</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Loads styles and formats from a Configurate loader into this I18N.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+        </div>
+    </div>
+</div>
+
+</body></html>
+
