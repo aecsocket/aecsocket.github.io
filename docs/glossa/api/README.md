@@ -1,16 +1,22 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Setup
+# API
+
+How to use the developer API.
+
+## Setup
+
+First of all, you must set up Glossa in your development environment.
+
+This example uses **Gradle - Kotlin DSL - Version catalog**.
 
 :::tip
 
 Find the current version [here](https://github.com/aecsocket/glossa).
 
 :::
-
-## Gradle - Kotlin DSL - Version catalog
 
 `gradle/libs.version.toml`
 

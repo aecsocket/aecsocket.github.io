@@ -1,17 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Concepts
 
 The basic concepts of Glossa.
-
-:::note
-
-Throughout this documentation, tags like `<red>` and `<blue>` in messages will
-represent coloured parts of the message.
-
-:::
 
 ## Translations
 
@@ -140,8 +133,9 @@ Here are your gifts:
   - <blue>The Blue Gift</blue>
 ```
 
-Note the coloured parts here, `<red>` and `<blue>` - they weren't in the original message
-format. Instead, they came from *raw components* being passed into that argument `gift_name`:
+Note the coloured parts here, `<red>...</red>` and `<blue>...</blue>` - they weren't in
+the original message format. Instead, they came from *raw components* being passed into
+that argument `gift_name`:
 
 ```kt
 import net.kyori.adventure.text.Component.*
@@ -159,7 +153,7 @@ i18n["message.receive.gifts", argMap(
 Because substitutions may contain multiple lines, you can define a separator between each
 element (if no separator is specified, then the elements are just joined together).
 
-`@$<_key_>[_separator]_` defines a substitution with argument key `_key_`, and separator
+`@$<_key_>[_separator_]` defines a substitution with argument key `_key_`, and separator
 `_separator_`.
 
 ```icu-message-format
@@ -273,10 +267,10 @@ i18n["vector", argMap(
 data class NamedVector(val id: String, val x: Float, val y: Float)
     : Localizable<Component> {
     override fun localize(i18n: TemplatingI18N<Component>, locale: Locale) =
-      i18n[locale, "vectors.$id", argMap(
+      i18n.safe(locale, "vectors.$id", argMap(
         "x" arg {x},
         "y" arg {y}
-      )]
+      ))
 }
 
 val vector = Vector("spawn_point", 5.5, 6)

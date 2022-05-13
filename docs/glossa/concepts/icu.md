@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # ICU Templates
 
-Guide on how to write ICU templates
+Guide on how to write ICU templates.
 
 ## Preface
 
