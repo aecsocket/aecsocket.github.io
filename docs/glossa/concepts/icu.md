@@ -21,7 +21,7 @@ A template is a block in your format that will be replaced by an argument specif
 New messages: {new_messages, number}
 ```
 
-The `{new_messages, number} block will be replaced by whatever value is passed in:
+The `{new_messages, number}` block will be replaced by whatever value is passed in:
 
 using `new_messages = 5`:
 ```

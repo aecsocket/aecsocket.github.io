@@ -25,7 +25,7 @@ Find the current version [here](https://github.com/aecsocket/glossa).
 glossa = "[VERSION]"
 
 [libraries]
-glossa = { group = "com.github.aecsocket", name = "glossa-[MODULE]", version.ref = "glossa" }
+glossa = { group = "com.github.aecsocket.glossa", name = "glossa-[MODULE]", version.ref = "glossa" }
 ```
 
 `build.gradle.kts`
