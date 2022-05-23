@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":glossa-core:dokkaHtmlPartial/main":[],":glossa-adventure:dokkaHtmlPartial/main":[]}'
+sourceset_dependencies = '{":glossa-core:dokkaHtmlPartial/main":[]}'
