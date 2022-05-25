@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 
 module:glossa-adventure
 com.github.aecsocket.glossa.adventure
+module:glossa-configurate
+com.github.aecsocket.glossa.configurate
 module:glossa-core
 com.github.aecsocket.glossa.core
-com.github.aecsocket.glossa.core.extension
