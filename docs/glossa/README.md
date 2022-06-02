@@ -26,7 +26,7 @@ Unicode's [ICU4J](https://icu.unicode.org/) is a library introducing many locali
 Glossa uses ICU4J to parse templates in one stage of its templating process,
 so translations can use these features without compromise.
 
-<!-- use empty <tr> in between to trick zebra striping in GH markdown -->
+<!-- use empty <tr> in between to trick zebra striping -->
 
 <table>
 
@@ -52,7 +52,6 @@ i18n.make("cart_items") {
 </td>
 <td>
 
-English
 ```xml
 You have 1 item in your cart
 ```
@@ -83,6 +82,7 @@ i18n.make("item_queue.processed") {
 </td>
 <td>
 
+English
 ```xml
 Items processed:
   115 / 1,000

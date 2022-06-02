@@ -228,7 +228,7 @@ that argument `gift_name`:
 :::info
 
 For developers: In the API, for a given I18N service `I18N<T>`, the substitutions
-provided must be `List<T>`. Conveniently, you can use the output of `I18N.get: List<T>`
+provided must be `List<T>`. Conveniently, you can use the output of `I18N.make: List<T>`
 operations to get such a list.
 
 Glossa provides direct support for such an operation through the `Localizable` interface,
