@@ -11,37 +11,39 @@ Guide on how to write ICU templates.
 The official Unicode ICU is very verbose, and takes a lot of effort to understand properly.
 This document aims to provide a simpler guide to ICU than is available elsewhere.
 
-You can find ICU documentation on https://unicode-org.github.io/icu/userguide/.
+You can find ICU documentation on formats at https://unicode-org.github.io/icu/userguide/format_parse/.
 
 ## Templates
 
 A template is a block in your format that will be replaced by an argument specified from code.
 
 ```icu-message-format
-New messages: {new_messages, number}
+New messages: @new_messages{_, number}
 ```
 
-The `{new_messages, number}` block will be replaced by whatever value is passed in:
+The `@new_messages{_, number}` block will be replaced by whatever value is passed in:
 
-using `new_messages = 5`:
-```
-New messages: 5
-```
+| Value | Result |
+|-------|--------|
+| 5 | `New messages: 5` |
 
 ## Types
 
 When defining a template, you can optionally define what type of value it will be displayed
 as:
 
-| Type | Display as... | Example |
+| Type | Display as | Example |
 |------|-------------|---------|
-| (none) | a raw piece of text | `You got a friend request from {username}` |
-| `number` | a number, with separators and other features based on the language | `You have {followers, number} followers` |
+| (none) | a raw piece of text | `You got a friend request from @username{_}` |
+| `number` | a number, with separators and other features based on the language | `Current followers: @followers{_, number}` |
+| `plural` | a number, which changes how the rest of the message is shown (more info later) | `You have @followers{_, plural, ...}` |
 | `date` | a point in time | `You first joined on {first_join, date}` |
 
 For each type, you can define some extra parameters.
 
 ### Number
+
+You can either use a predefined format, or a skeleton format, where the 
 
 You can combine these together, e.g. `% .00`
 
