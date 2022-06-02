@@ -53,7 +53,7 @@ const config = {
         title: 'aecsocket',
         logo: {
           alt: 'aecsocket',
-          src: 'img/logo.svg',
+          src: 'img/icon.svg',
         },
         items: [
           {
