@@ -51,6 +51,15 @@ This should be read by both users and developers!
 
 :::
 
+:::caution
+
+Argument keys must only contain `a-z0-9_`:
+* lowercase letters
+* numbers
+* an underscore `_`
+
+:::
+
 ## Scopes
 
 A scope is a block in a translation that can be used for various different features. One of

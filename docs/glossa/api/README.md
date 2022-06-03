@@ -43,4 +43,5 @@ dependencies {
 ### Modules
 
 * `glossa-core`
-* `glossa-adventure`
+* `glossa-adventure` (incl. `-core`)
+* `glossa-configurate` (incl. `-core`, `-adventure`)

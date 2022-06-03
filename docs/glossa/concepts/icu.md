@@ -23,9 +23,10 @@ New messages: @new_messages{_, number}
 
 The `@new_messages{_, number}` block will be replaced by whatever value is passed in:
 
-| Value | Result |
-|-------|--------|
+| `new_messages` | Result |
+|----------------|--------|
 | 5 | `New messages: 5` |
+| 17 | `New messages: 17` |
 
 ## Types
 
@@ -87,7 +88,7 @@ How different magnitudes of numbers are displayed.
 | | | 12345 | `12K` |
 | | | 1200000 | `1.2M` |
 | | | |
-| `{_, number, :: KK}` | Long; magnitude names | 1234 | `1.2 thousand` |
+| `{_, number, :: KK}` | Long; names | 1234 | `1.2 thousand` |
 | | | 1789 | `1.8 thousand` |
 | | | 12345 | `12 thousand` |
 | | | 1200000 | `1.2 million` |
@@ -109,14 +110,15 @@ You can find a list of all units and currencies at the end of this document.
 
 ### Date
 
-Specify these after the `date`, e.g. `@the_date{_, date, short}`:
+You can define the form in which a date is displayed - it's recommended to use
+some default format options.
 
-| Format | Description | Example |
-|--------|-------------|---------|
-| `short` | Numeric | `12/13/52` |
-| `medium` | Written short | `Jan. 12, 1952` |
-| `long` | Written long | `January 12, 1952` |
-| `full` | All details | `Tuesday, April 12, 1952 AD` |
+| Format | Description | Result |
+|--------|-------------|--------|
+| `{_, date, short}` | Numeric | `12/13/52` |
+| `{_, date, medium}` | Written short | `Jan. 12, 1952` |
+| `{_, date, long}` | Written long | `January 12, 1952` |
+| `{_, date, full}` | All details | `Tuesday, April 12, 1952 AD` |
 
 ## Plurals
 
@@ -124,16 +126,17 @@ If an argument is provided as a number, you can output a different message depen
 on the number, and how the language handles plurals:
 
 ```icu-message-format
-You have {cart_items, plural,
+You have @cart_items{_, plural,
   one {# item}
   other {# items}
 } in your shopping cart.
 ```
 
-```
-You have 3 items in your shopping cart.
-You have 1 item in your shopping cart.
-```
+| `cart_items` | Result |
+|--------------|--------|
+| 0 | `You have 0 items in your shopping cart.` |
+| 1 | `You have 1 item in your shopping cart.` |
+| 2 | `You have 2 items in your shopping cart.` |
 
 The different quantifiers you can specify are:
 - `zero`
@@ -158,35 +161,26 @@ You can change the output depending on the text value of another argument:
 
 Depending on the value passed to `user_gender`, a different message is used here:
 
-using `user_gender = "male"`
-```
-SomeMaleUser just joined a game, join him!
-```
-
-using `user_gender = "female"`
-```
-SomeFemaleUser just joined a game, join her!
-```
+| `user_gender` | Result |
+|---------------|--------|
+| male | `SomeMaleUser just joined a game, join him!` |
+| female | `SomeFemaleUser just joined a game, join her!` |
 
 You can also access the actual value passed to the selected argument inside the block:
 
 ```icu-message-format
 You entered @world_type{_, select,
-  easy {an Easy}
-  hard {a Hard}
+  easy {an easy}
+  hard {a hard}
   other {the {_}}
 } world!
 ```
 
-using `world_type = "easy"`
-```
-You entered an Easy world!
-```
-
-using `world_type = "Impossible"`
-```
-You entered the Impossible world!
-```
+| `world_type` | Result |
+|--------------|--------|
+| easy | `You entered an easy world!` |
+| hard | `You entered a hard world!` |
+| impossible | `You entered the impossible world!` |
 
 ## Addendum
 

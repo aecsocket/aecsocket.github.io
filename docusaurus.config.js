@@ -70,7 +70,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: [ "kotlin", "toml", "icu-message-format" ]
+        additionalLanguages: [ "kotlin", "toml", "json5", "icu-message-format" ]
       },
     }),
 };

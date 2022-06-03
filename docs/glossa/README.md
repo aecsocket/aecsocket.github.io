@@ -284,10 +284,10 @@ import adventure.NamedTextColor.*
 i18n.make("notification.items.received") {
   list("items") {
     map {
-      sub("item_name") { listOf(text("Fire Sword"), RED) }
+      sub("item_name") { listOf(text("Fire Sword", RED)) }
     }
     map {
-      sub("item_name") { listOf(text("Water Sword"), BLUE) }
+      sub("item_name") { listOf(text("Water Sword", BLUE)) }
     }
   }
 }
