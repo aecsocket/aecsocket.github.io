@@ -247,8 +247,8 @@ Items in cart: @items[
 ```kotlin
 i18n.make("cart_items") {
   list("items") {
-    sub(listOf("Chair"))
-    sub(listOf("Table"))
+    sub("Chair")
+    sub("Table")
   }
 }
 ```
@@ -272,7 +272,7 @@ Ice Sword
 `store_items`
 ```icu-message-format
 Items in store: @items[
-  · @_()]
+  · @_[_()]]
 ```
 
 </td>

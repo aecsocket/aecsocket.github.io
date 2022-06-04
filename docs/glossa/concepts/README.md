@@ -179,8 +179,7 @@ Authors: "AuthorOne", "AuthorTwo", "AuthorThree"
 Some parts of the format may be replaced with already-generated parts, that are *not*
 passed through ICU templates.
 
-`@_key_(_separator_)` defines a substitution with argument key `_key_`, and separator between
-components `_separator_`
+`@_key_()` defines a substitution with argument key `_key_`.
 
 :::note
 
@@ -196,7 +195,7 @@ making it easier to demonstrate some features of substitutions.
 
 ```icu-message-format
 Gifts received today: @gifts[
-  · @gift_name( | )]
+  · @gift_name()]
 ```
 
 </td>
@@ -204,8 +203,8 @@ Gifts received today: @gifts[
 
 ```xml
 Gifts received today:
-  · <red>Fire Sword</red> | Sets enemies on fire
-  · <blue>Ice Sword</blue> | Freezes enemies
+  · <red>Fire Sword</red>
+  · <blue>Ice Sword</blue>
 ```
 
 </td>
@@ -220,33 +219,31 @@ that argument `gift_name`:
 ```json
 "gifts": [
   {
-    "gift_name": [
-      { "text": "Fire Sword", "color": "blue" },
-      "Sets enemies on fire"
-    ]
+    "gift_name": { "text": "Fire Sword", "color": "blue" }
   },
   {
-    "gift_name": [
-      { "text": "Ice Sword", "color": "blue" },
-      "Freezes enemies"
-    ]
+    "gift_name": { "text": "Ice Sword", "color": "blue" }
   }
 ]
 ```
 
 :::info
 
-For developers: In the API, for a given I18N service `I18N<T>`, the substitutions
-provided must be `List<T>`. Conveniently, you can use the output of `I18N.make: List<T>`
-operations to get such a list.
+For developers: In the API, for a given I18N service `I18N<T>`, the substitution
+provided must be `T`. The output of `I18N.make` produces a `List<T>`, which can be put into a list argument with substitutions inside.
 
-Glossa provides direct support for such an operation through the `Localizable` interface,
+Glossa provides a shorthand for such an operation through the `Localizable` interface,
 and the `tl` argument type.
+
+```icu-message-format
+Gifts received today: @gifts[
+  · @gift_name[@_()][ | ]
+```
 
 ```kotlin
 data class Item(val id: String) : Localizable<String> {
   override fun localize(i18n: I18N<String>): List<String> =
-    i18n.safe("item.$id")
+    i18n.safe("item.$id") + i18n.safe("item.description.$id")
 }
 
 i18n.safe("gifts") {
@@ -256,6 +253,11 @@ i18n.safe("gifts") {
     }
   }
 }
+```
+
+```xml
+Gifts received today:
+  · <red>Fire Sword</red> | Sets enemies on fire
 ```
 
 :::
