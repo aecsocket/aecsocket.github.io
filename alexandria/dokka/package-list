@@ -3,16 +3,17 @@ $dokka.linkExtension:html
 
 module:alexandria-core
 com.github.aecsocket.alexandria.core
-com.github.aecsocket.alexandria.core.bound
+com.github.aecsocket.alexandria.core.command
 com.github.aecsocket.alexandria.core.effect
 com.github.aecsocket.alexandria.core.extension
 com.github.aecsocket.alexandria.core.keyed
+com.github.aecsocket.alexandria.core.physics
 com.github.aecsocket.alexandria.core.serializer
-com.github.aecsocket.alexandria.core.vector
 module:alexandria-paper
-com.github.aecsocket.alexandria.paper.bound
+com.github.aecsocket.alexandria.paper.datatype
 com.github.aecsocket.alexandria.paper.effect
 com.github.aecsocket.alexandria.paper.extension
-com.github.aecsocket.alexandria.paper.packet
+com.github.aecsocket.alexandria.paper.input
+com.github.aecsocket.alexandria.paper.physics
 com.github.aecsocket.alexandria.paper.plugin
 com.github.aecsocket.alexandria.paper.serializer

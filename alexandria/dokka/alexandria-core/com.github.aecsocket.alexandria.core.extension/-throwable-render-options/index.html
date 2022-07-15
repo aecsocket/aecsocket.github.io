@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ThrowableRenderOptions</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>alexandria</span>            </a>    </div>
+    <div>0.4.0
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="alexandria-core::com.github.aecsocket.alexandria.core.extension/ThrowableRenderOptions///PointingToDeclaration//1335693951">
+  <div class="breadcrumbs"><a href="../../index.html">alexandria-core</a><span class="delimiter">/</span><a href="../index.html">com.github.aecsocket.alexandria.core.extension</a><span class="delimiter">/</span><a href="index.html">ThrowableRenderOptions</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Throwable</span><wbr><span>Render</span><wbr><span><span>Options</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ThrowableRenderOptions</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>separator<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>className<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(YELLOW)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>message<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GOLD)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>declaringPackage<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>declaringClass<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(DARK_RED)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>methodName<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(RED)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>lineNumber<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(YELLOW)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>packageLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">3</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>fileName<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GOLD)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>unknownSource<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>exDetail<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GOLD, TextDecoration.ITALIC)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>framesInCommon<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY, TextDecoration.ITALIC)</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-748186198%2FConstructors%2F1335693951" anchor-label="ThrowableRenderOptions" id="-748186198%2FConstructors%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-throwable-render-options.html"><span>Throwable</span><wbr><span>Render</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-748186198%2FConstructors%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-throwable-render-options.html"><span class="token function">ThrowableRenderOptions</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;separator<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;className<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(YELLOW)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;message<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GOLD)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;declaringPackage<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;declaringClass<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(DARK_RED)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;methodName<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(RED)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;lineNumber<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(YELLOW)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;packageLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">3</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;fileName<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GOLD)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;unknownSource<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;exDetail<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GOLD, TextDecoration.ITALIC)<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;framesInCommon<span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="token operator"> = </span>style(GRAY, TextDecoration.ITALIC)</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-731862193%2FClasslikes%2F1335693951" anchor-label="Companion" id="-731862193%2FClasslikes%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-731862193%2FClasslikes%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1248369477%2FProperties%2F1335693951" anchor-label="className" id="1248369477%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="class-name.html">className</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1248369477%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="1248369477%2FProperties%2F1335693951" anchor-label="className" id="1248369477%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="class-name.html">className</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1036889953%2FProperties%2F1335693951" anchor-label="declaringClass" id="1036889953%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="declaring-class.html">declaringClass</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1036889953%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="1036889953%2FProperties%2F1335693951" anchor-label="declaringClass" id="1036889953%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="declaring-class.html">declaringClass</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1351667373%2FProperties%2F1335693951" anchor-label="declaringPackage" id="-1351667373%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="declaring-package.html">declaringPackage</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1351667373%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-1351667373%2FProperties%2F1335693951" anchor-label="declaringPackage" id="-1351667373%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="declaring-package.html">declaringPackage</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1080278610%2FProperties%2F1335693951" anchor-label="exDetail" id="-1080278610%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ex-detail.html">exDetail</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1080278610%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-1080278610%2FProperties%2F1335693951" anchor-label="exDetail" id="-1080278610%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="ex-detail.html">exDetail</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1031183307%2FProperties%2F1335693951" anchor-label="fileName" id="1031183307%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="file-name.html">fileName</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1031183307%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="1031183307%2FProperties%2F1335693951" anchor-label="fileName" id="1031183307%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="file-name.html">fileName</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-586737956%2FProperties%2F1335693951" anchor-label="framesInCommon" id="-586737956%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="frames-in-common.html">framesInCommon</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-586737956%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-586737956%2FProperties%2F1335693951" anchor-label="framesInCommon" id="-586737956%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="frames-in-common.html">framesInCommon</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-517359339%2FProperties%2F1335693951" anchor-label="lineNumber" id="-517359339%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="line-number.html">lineNumber</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-517359339%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-517359339%2FProperties%2F1335693951" anchor-label="lineNumber" id="-517359339%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="line-number.html">lineNumber</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1410779487%2FProperties%2F1335693951" anchor-label="message" id="-1410779487%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="message.html">message</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1410779487%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-1410779487%2FProperties%2F1335693951" anchor-label="message" id="-1410779487%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="message.html">message</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1185846598%2FProperties%2F1335693951" anchor-label="methodName" id="1185846598%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="method-name.html">methodName</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1185846598%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="1185846598%2FProperties%2F1335693951" anchor-label="methodName" id="1185846598%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="method-name.html">methodName</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1219613892%2FProperties%2F1335693951" anchor-label="packageLength" id="-1219613892%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="package-length.html">packageLength</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1219613892%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-1219613892%2FProperties%2F1335693951" anchor-label="packageLength" id="-1219613892%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="package-length.html">packageLength</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">3</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1469803837%2FProperties%2F1335693951" anchor-label="separator" id="-1469803837%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="separator.html">separator</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1469803837%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-1469803837%2FProperties%2F1335693951" anchor-label="separator" id="-1469803837%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="separator.html">separator</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1304929501%2FProperties%2F1335693951" anchor-label="unknownSource" id="-1304929501%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":alexandria-core:dokkaHtmlPartial/main" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="unknown-source.html">unknownSource</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1304929501%2FProperties%2F1335693951"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":alexandria-core:dokkaHtmlPartial/main"><a data-name="-1304929501%2FProperties%2F1335693951" anchor-label="unknownSource" id="-1304929501%2FProperties%2F1335693951" data-filterable-set=":alexandria-core:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="unknown-source.html">unknownSource</a><span class="token operator">: </span><span data-unresolved-link="net.kyori.adventure.text.format/Style///PointingToDeclaration/">Style</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+        </div>
+    </div>
+</div>
+
+</body></html>
+
