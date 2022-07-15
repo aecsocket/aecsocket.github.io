@@ -33,8 +33,23 @@ These hosts can take in events from the world:
 * A block is broken
 * A single game tick occurs (20 times per second)
   * Note: this includes every loaded item in the game - any items in chests, shulkers, entities, etc. will be ticked
+  * This is achieved through the **host resolver** system
 
 In turn, these hosts pass these events down to the node tree, which then acts on these events.
+
+### Host resolver
+
+Each game tick (20 times per second), the **host resolver** aims to find all loaded hosts in the world, and attempt to run a tick event on them. At the broadest level, each world and entity in the server is resolved as a possible host. Deeper down, each item stack in:
+* each thrown item
+* each player's current inventory cursor
+* each entity's equipment
+* each player's inventory
+* each chest and container's inventort
+* each shulker box in all of the above
+is resolved as a possible host. For each of these hosts, if they hold a node tree, that tree will be ticked.
+This allows developers to write systems that they can be sure can't be exploited by putting items somewhere else (think of an irradiated item - it can apply radiation not only when a player holds one, but even when it's placed in a chest or the world)
+
+A note on performance: The host resolver attempts to take minimal action where possible, to reduce the performance overhead of such a system. In this spirit, only nodes which are marked as "ticking" will be ticked, and internal methods are used to reduce the overhead of reading the item data. This may break between game versions!
 
 ### Components
 
@@ -50,10 +65,12 @@ wooden_sword_grip: {
   features: {
     sword_attack: {}
   }
-  stats: {
-    swing_delay: 0.5
-    swing_reach: 3.0
-  }
+  stats: [
+    {
+      "sword_attack:swing_delay": 0.5
+      "sword_attack:swing_reach": 3.0
+    }
+  ]
   slots: {
     guard: {
       required: true
@@ -132,8 +149,8 @@ children: {
 
 #### Feature data
 
-**Feature data** can be thought of as the current state of your feature on a specific node, that gets
-stored in e.g. an item stack (it's not exactly synonymous with **feature state**, but that's for later).
+**Feature data** can be thought of as the data that your node stores when it's saved into the world, e.g. into an item.
+This data is stored in the world itself, persists between restarts, and the feature is free to do what it likes with this data.
 For example, a wand's power crystal's charge can be stored through feature data:
 
 ```json5
