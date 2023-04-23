@@ -7,20 +7,9 @@ are working with.
 
 ## Usage
 
-See [the repository's page](https://github.com/aecsocket/glossa) to get the latest version.
-
-`build.gradle.kts`
-```kotlin
-repositories {
-    mavenCentral()
-    // maven("https://s01.oss.sonatype.org/content/repositories/snapshots") // for snapshot versions
-}
-
-dependencies {
-    implementation("io.github.aecsocket", "glossa-api", "VERSION")
-    implementation("io.github.aecsocket", "glossa-configurate", "VERSION")
-}
-```
+See [the repository page](https://github.com/aecsocket/glossa) to get:
+- the latest version
+- the artifact coordinates for Maven/Gradle
 
 ## Glossa
 
