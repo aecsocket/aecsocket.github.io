@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# API
+# Architecture
 
 ## Entry point
 
 The entry point of the library is an `IgnacioEngine` instance, which manages all resources held by the physics engine.
-The underlying physics engine may change, however the currently supported engine is [Jolt](https://github.com/jrouwe/JoltPhysics),
-implemented in the module `ignacio-jolt`.
+The underlying physics engine may change, however the currently supported engine is [JoltPhysics](https://github.com/jrouwe/JoltPhysics),
+running with Java bindings via [jolt-java](https://github.com/aecsocket/jolt-java), implemented in the module `ignacio-jolt`.
 Documentation for the engine can be [found here](https://jrouwe.github.io/JoltPhysics).
 
 To obtain one:

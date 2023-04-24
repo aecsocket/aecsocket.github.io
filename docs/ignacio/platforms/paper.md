@@ -7,7 +7,7 @@ sidebar_position: 1
 Include the `ignacio-paper` module in your build, and use `...ignacio.paper.IgnacioAPI` to access an instance
 of the `Ignacio` plugin. From there, access the `engine` property to get the `IgnacioEngine` for the server.
 
-See the [Platforms](./README.md) page for more info.
+See the [Platforms](README.md) page for more info.
 
 ## Versions
 
