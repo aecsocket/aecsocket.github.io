@@ -53,7 +53,8 @@ physics threads. More detail in the Threading section.
 ## Physics bodies
 
 You can create a `PhysicsBody` using `PhysicsSpace.bodies.create[Static|Moving]()`, describing the body using an implementation
-of `BodyDescriptor`.
+of `BodyDescriptor`. Note that creating a body is not the same as adding it (created bodies are not automatically added), and
+removing a body is not the same as destroying it (you can still add back a removed body, but you can't add a destroyed body).
 
 ### `StaticBodyDescriptor`
 
@@ -65,8 +66,10 @@ for level geometry.
 A moving body can move, either dynamically or kinematically.
 - A dynamic body means it is moved by impulses, forces, constraints, etc.
   - It responds to collisions with other dynamic and kinematic bodies
+  - Use `.applyForce`, `.applyImpulse`, `.applyTorque`, `.applyAngularImpulse`
 - A kinematic body means it is moved **only** by setting its velocity through the API
   - Its position is not affected by any other bodies, but it can still affect dynamic bodies
+  - Use `.moveTo()` to move the body to a desired position and rotation
 
 ### Body access
 
@@ -113,7 +116,26 @@ model's shape in a collision shape - that will lead to terrible performance.
 
 ## Constraints
 
+You can constrain the motion of one or more bodies according to a constraint type, to simulate things like a door on a hinge
+or an object sliding along a track.
+A body can either be constrained to another body (dynamic or kinematic), or the world itself (`ConstraintTarget.World`).
+Only dynamic bodies will be affected by the forces that a constraint applies, and the constraint may not perfectly resolve
+the constraint initially (but over time it will approach a solution).
 
+A body may restrict certain **degrees of freedom**.
+
+You can create constraints in a physics space using `PhysicsSpace.constraints.create()`. The same create/destroy/add/remove
+semantics as bodies apply to constraints - you can add/remove them as many times as you want, but you can only create or
+destroy a specific constraint once.
+
+The available constraint types are:
+- `JointDescriptor` - constraints between two bodies, forming a joint
+  - `FixedJointDescriptor` - attaches one body to another without any degrees of freedom.
+  - TODO
+
+## Layers
+
+## Filters
 
 ## Threading
 
