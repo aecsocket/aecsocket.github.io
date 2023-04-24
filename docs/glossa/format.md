@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Format
 
 A translation file, such as `en-US.yml` or `root.yml` defines all the info that the translation engine uses.
@@ -148,7 +152,7 @@ player_stats: "Kills: {kills, number} / Money: {money, number, :: .00} USD"
 
 <tr>
   <td>
-    <code>kills = 12345</code></br>
+    <code>kills = 12345</code><br/>
     <code>money = 101.45</code>
   </td>
   <td>
@@ -191,7 +195,7 @@ fr-FR:
 
 <tr>
   <td>
-    <code>num_items = 0</code></br>
+    <code>num_items = 0</code><br/>
     <code>date_sold = 1/1/1970</code>
   </td>
   <td>
@@ -204,7 +208,7 @@ fr-FR:
 
 <tr>
   <td>
-    <code>num_items = 1</code></br>
+    <code>num_items = 1</code><br/>
     <code>date_sold = 1/1/1970</code>
   </td>
   <td>
@@ -217,7 +221,7 @@ fr-FR:
 
 <tr>
   <td>
-    <code>num_items = 5</code></br>
+    <code>num_items = 5</code><br/>
     <code>date_sold = 1/1/1970</code>
   </td>
   <td>

@@ -1,6 +1,12 @@
+---
+sidebar_position: 3
+---
+
 # Glossa
 
-[GitHub](https://github.com/aecsocket/glossa)
+Localization library for Adventure components
+
+### [GitHub](https://github.com/aecsocket/glossa)
 
 Glossa provides a simple and opinionated API for developers to create localizable versions of their software,
 and provides server admins and translators with tools to create translations based on powerful and useful

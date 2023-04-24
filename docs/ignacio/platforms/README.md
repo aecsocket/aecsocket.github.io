@@ -1,7 +1,11 @@
+---
+sidebar_position: 2
+---
+
 # Platforms
 
 Ignacio runs on the following platforms:
-- [Paper](./paper.md)
+- [Paper](paper.md)
 
 There are several features present on all platforms:
 

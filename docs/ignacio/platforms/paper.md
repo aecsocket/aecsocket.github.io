@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Paper
 
 Include the `ignacio-paper` module in your build, and use `...ignacio.paper.IgnacioAPI` to access an instance

@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # API
 
 The Glossa API is designed entirely around Kotlin and its DSL capabilities. Although the API can be
