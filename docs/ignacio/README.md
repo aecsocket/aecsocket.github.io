@@ -6,7 +6,7 @@ sidebar_position: 4
 
 API abstraction layer for physics engines for Minecraft servers
 
-### [GitHub](https://github.com/aecsocket/ignacio) · [Architecture](architecture)
+### [GitHub](https://github.com/aecsocket/ignacio) · [Docs](https://aecsocket.github.io/ignacio)
 
 Ignacio is an integration project which combines a fully-featured physics engine backend into a server-side environment,
 allowing a game world's state (blocks, entities, etc.) to influence the physics state, and allow that physics state to be
