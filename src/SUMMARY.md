@@ -10,3 +10,6 @@
 [Alexandria](alexandria/README.md)
 
 [Ignacio](ignacio/README.md)
+- [API](ignacio/api.md)
+- [Platforms](ignacio/platforms/README.md)
+  - [Paper](ignacio/platforms/paper.md)
