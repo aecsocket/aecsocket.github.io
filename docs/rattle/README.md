@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# Ignacio
+# Rattle
 
 API abstraction layer for physics engines for Minecraft servers
 
-### [GitHub](https://github.com/aecsocket/ignacio) · [Docs](https://aecsocket.github.io/ignacio)
+### [GitHub](https://github.com/aecsocket/rattle) · [Docs](https://aecsocket.github.io/rattle)
 
-Ignacio is an integration project which combines a fully-featured physics engine backend into a server-side environment,
+Rattle is an integration project which combines a fully-featured physics engine backend into a server-side environment,
 allowing a game world's state (blocks, entities, etc.) to influence the physics state, and allow that physics state to be
 displayed to clients via vanilla packets (no client mod required).
 
