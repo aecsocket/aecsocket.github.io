@@ -26,7 +26,8 @@ val english: Locale = Locale.forLanguageTag("en-US")
 
 // specify the strategy for when a message doesn't exist for a given message key
 // `Default` will simply output the key itself
-// use `DefaultLogging(Logger)` to output the key and a warning to the logger
+// use `JavaLogging(Logger)` to output the key and a warning to the logger
+// or `Logging((String) -> Unit)` to output the key and a warning to the logging function provided
 val invalidMessageProvider: InvalidMessageProvider = InvalidMessageProvider.Default
 
 // create the Glossa instance
