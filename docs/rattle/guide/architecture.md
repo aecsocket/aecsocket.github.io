@@ -65,6 +65,9 @@ Rigid bodies may be:
 - kinematic - the user defines what position the body moves to, and the engine calculates the
   velocities for that
 
+A rigid body may also have continuous collision detection enabled (CCD) to make collision detection
+more precise when the body is moving quickly (due to tunneling).
+
 ## Joint
 
 A joint is a constraint that can be applied by a user to a physics space, which ensures that two
