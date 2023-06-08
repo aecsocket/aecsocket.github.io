@@ -4,13 +4,14 @@ sidebar_position: 1
 
 # Paper
 
-Include the `ignacio-paper` module in your build, and use `...ignacio.paper.IgnacioAPI` to access an instance
-of the `Ignacio` plugin. From there, access the `engine` property to get the `IgnacioEngine` for the server.
+Platform support for [Paper](https://papermc.io) server software.
 
-See the [Platforms](README.md) page for more info.
+## Installation
 
-## Versions
+### Download
 
-The plugin is only available for the latest version of the game.
+(TODO: there are no precompiled plugin JARs available)
 
-The plugin has full support for [Folia](https://github.com/PaperMC/Folia).
+Next, place the JAR file into your server's `plugins/` directory.
+
+Next, read the [User Guide](../guide/user).

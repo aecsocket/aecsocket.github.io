@@ -4,39 +4,29 @@ sidebar_position: 4
 
 # Rattle
 
-API abstraction layer for physics engines for Minecraft servers
+Generic physics engine framework for Minecraft servers
 
 ### [GitHub](https://github.com/aecsocket/rattle) · [Docs](https://aecsocket.github.io/rattle)
 
-Rattle is an integration project which combines a fully-featured physics engine backend into a server-side environment,
-allowing a game world's state (blocks, entities, etc.) to influence the physics state, and allow that physics state to be
-displayed to clients via vanilla packets (no client mod required).
+Rattle is an project which integrates a fully-featured physics engine into a server-side game environment,
+and exposes an ergonomic and user-friendly API for interacting with the physics state. The integration
+includes having the world state (such as blocks and entities) influence the physics state (i.e. blocks in
+the terrain can be collided against), and allow that physics state to be displayed to vanilla clients via
+techniques such as display entities - no mods required!
 
-The project currently uses the [JoltPhysics](https://github.com/jrouwe/JoltPhysics) backend, a rigid-body physics library,
-with Java bindings via [jolt-java](https://github.com/aecsocket/jolt-java) and integrated in the `ignacio-jolt` module.
+This project currently uses the [Rapier](https://rapier.rs) physics engine backend, with Java bindings
+provided via [rapier-ffi/rapier-java](https://github.com/aecsocket/rapier-ffi/tree/main/rapier-java), and
+integrated as a Rattle backend in the `rattle-rapier` module.
 
-## Features
+**This project requires Java 19 *exactly*, and the `--enable-preview --enable-native-access=ALL-UNNAMED` flags
+must be set!** See the installation guides for more detail.
 
-- [x] Rigid body physics and collision detection
-- [x] Integration with the world, so terrain and entities are automatically included as bodies
-- [x] Fully server-side; no client mods required
-- [x] Compatible with [Folia](https://github.com/PaperMC/Folia)
-- [x] Free and open-source under the MIT license
+## Getting started
 
-## Motivation
+Note: The terms mod and plugin are used interchangeably in these documents.
 
-Minecraft is a game that does not have advanced 3D physics - the limits of what it can do is basically ray-tests and
-simple AABB collision response. However, physics simulations are really cool, and having it integrate cleanly with the
-world would be even more impressive.
+### [Supported platforms and installation guides](./platforms/)
 
-The code is implemented as a server-side plugin rather than a client-side mod, because it means that:
-- all calculations happen on a single consistent environment
-- clients don't need to download any mods for a mod loader (Forge, Fabric etc.) to interact with physics
+### [For users](./guide/user/)
 
-There have already been projects which integrate some degree of rigid-body physics into the game, however those are mainly
-used for one-off specific features, and most are client-side mods. Ignacio acts instead as a framework for other projects
-to use to integrate physics into a world.
-
-## Installation
-
-There are currently no plugin JARs available.
+### [For developers](./guide/dev/)
