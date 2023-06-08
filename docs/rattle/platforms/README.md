@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Platforms
 
 This project currently runs on:

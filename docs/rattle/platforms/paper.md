@@ -15,3 +15,9 @@ Platform support for [Paper](https://papermc.io) server software.
 Next, place the JAR file into your server's `plugins/` directory.
 
 Next, read the [User Guide](../guide/user).
+
+## API
+
+Entry point to Rattle is provided through `io.github.aecsocket.rattle.paper`:
+- Kotlin: `val Rattle`
+- Java: `PaperRattle.api()`

@@ -15,3 +15,9 @@ Platform support for [Fabric](https://fabricmc.net) client/server software.
 Place the JAR file into your client's or server's `mods/` directory.
 
 Next, read the [User Guide](../guide/user).
+
+## API
+
+Entry point to Rattle is provided through `io.github.aecsocket.rattle.fabric`:
+- Kotlin: `val Rattle`
+- Java: `FabricRattle.api()`
