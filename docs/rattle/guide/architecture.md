@@ -7,17 +7,18 @@ sidebar_position: 1
 An explanation of the concepts and design of the project.
 
 Here is a brief overview of the terminology and concepts used in the project - if you need more
-detailed explanations on the various concepts, see their respective pages in the dev guide.
+detailed explanations on the various concepts, see the code documentation.
 
 ## Physics engine
 
 Rattle is simply a frontend, or wrapper, around an existing physics engine - this engine is called
 the "backend". The current backend and technologies used are:
+- `rattle-api` - the frontend exposed to developers for communicating with a physics engine
 - [Rapier](https://rapier.rs) - a physics engine written in Rust
 - [rapier-ffi/rapier-ffi](https://github.com/aecsocket/rapier-ffi/tree/main/rapier-ffi) - C bindings for the Rust engine
 - [rapier-ffi/rapier-java](https://github.com/aecsocket/rapier-ffi/tree/main/rapier-java) - Java bindings for the C bindings
-- `rattle-api` - the frontend exposed to developers for communicating with the physics engine
-- The platform implementations of Rattle
+- `rattle-rapier` - the implementation of `rattle-api` for the Rapier engine
+- The platform implementations of Rattle, e.g. `rattle-paper`
 
 Since the backend is not written in Java, it is referred to as a "native library" - as in, it is
 managed by the native operating system, not the JVM (Java).
@@ -66,7 +67,9 @@ Rigid bodies may be:
   velocities for that
 
 A rigid body may also have continuous collision detection enabled (CCD) to make collision detection
-more precise when the body is moving quickly (due to tunneling).
+more precise when the body is moving quickly (due to tunneling). At a glance, this does a
+continuous sweep to test for collisions between a body's old and current position, and if so,
+moves it back to that first hit.
 
 ## Joint
 
@@ -97,14 +100,13 @@ physics space assigned to it. This handles all physics for this world, and can b
 using commands and through the API.
 
 Developer note: this is one of the most crucial parts of the API, however there are some safety
-guarantees you must uphold when working with one! See the corresponding dev guide page to
-see more.
+guarantees you must uphold when working with one! See the corresponding classes in the code for more documentation.
 
 ### Terrain strategy
 
 To allow blocks in the world to be collidable, we use a terrain strategy. The current terrain
 strategy is a "dynamic terrain" implementation, which creates collision on-the-fly as bodies
-require collision with chunks in the world.
+enter or exit chunks in the world.
 
 ### Entity strategy
 
