@@ -19,5 +19,5 @@ Next, read the [User Guide](../guide/user).
 ## API
 
 Entry point to Rattle is provided through `io.github.aecsocket.rattle.paper`:
-- Kotlin: `val Rattle`
+- Kotlin: `val Rattle: PaperRattle`
 - Java: `PaperRattle.api()`

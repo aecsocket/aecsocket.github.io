@@ -19,5 +19,5 @@ Next, read the [User Guide](../guide/user).
 ## API
 
 Entry point to Rattle is provided through `io.github.aecsocket.rattle.fabric`:
-- Kotlin: `val Rattle`
+- Kotlin: `val Rattle: FabricRattle`
 - Java: `FabricRattle.api()`

@@ -38,6 +38,7 @@ See [Platforms](../../platforms/) for details.
 
 ## Documentation
 
-The API is heavily documented, and is the easiest place to find development info since it's
-also integrated into your IDE. I plan to write small snippets here as well on how to combine
+The API is heavily documented and is the easiest place to find implementation info on certain
+classes and systems. It should also be integrated into your IDE, so if you need detailed info,
+check that first. I plan to write small snippets here as well on how to combine
 the different parts of the API together.
