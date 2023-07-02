@@ -1,0 +1,17 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:alexandria-api
+io.github.aecsocket.alexandria
+io.github.aecsocket.alexandria.desc
+io.github.aecsocket.alexandria.extension
+io.github.aecsocket.alexandria.serializer
+io.github.aecsocket.alexandria.sync
+module:alexandria-common
+io.github.aecsocket.alexandria.hook
+io.github.aecsocket.alexandria.hook.extension
+module:alexandria-paper
+io.github.aecsocket.alexandria.paper
+io.github.aecsocket.alexandria.paper.extension
+io.github.aecsocket.alexandria.paper.scheduling
+io.github.aecsocket.alexandria.paper.seralizer

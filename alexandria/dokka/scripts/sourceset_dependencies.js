@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":alexandria-api:dokkaHtmlPartial/main":[],":alexandria-paper:dokkaHtmlPartial/main":[],":alexandria-common:dokkaHtmlPartial/main":[]}'
