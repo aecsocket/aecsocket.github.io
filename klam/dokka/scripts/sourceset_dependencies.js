@@ -1,1 +1,0 @@
-sourceset_dependencies = '{":klam-configurate:dokkaHtmlPartial/main":[],":klam:dokkaHtmlPartial/main":[]}'
