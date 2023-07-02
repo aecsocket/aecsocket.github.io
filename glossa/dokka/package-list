@@ -1,0 +1,7 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:glossa
+io.github.aecsocket.glossa
+module:glossa-configurate
+io.github.aecsocket.glossa.configurate
