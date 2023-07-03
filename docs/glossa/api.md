@@ -41,7 +41,6 @@ val glossa: Glossa = glossaStandard(
 
 You can then use the functions inside the DSL scope to add data for the engine to use:
 
-
 ```kotlin
 glossaStandard(...) {
     substitutions {

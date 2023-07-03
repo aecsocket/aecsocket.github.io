@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Generic physics engine framework for Minecraft servers
 
-### [GitHub](https://github.com/aecsocket/rattle) · [Docs](https://aecsocket.github.io/rattle)
+### [GitHub](https://github.com/aecsocket/rattle) · [Docs](https://aecsocket.github.io/rattle) · [Dokka](https://aecsocket.github.io/rattle/dokka)
 
 Rattle is an project which integrates a fully-featured physics engine into a server-side game environment,
 and exposes an ergonomic and user-friendly API for interacting with the physics state. The integration

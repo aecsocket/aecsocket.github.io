@@ -27,6 +27,6 @@ the text, and allowing styling changes to not require modifying all existing tra
 
 ## Getting started
 
-For users, see the [Format](format.md) page.
+### [For users](./format.md)
 
-For developers, see the [API](api.md) page.
+### [For developers](./api.md)
