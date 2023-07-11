@@ -6,10 +6,14 @@ io.github.aecsocket.alexandria
 io.github.aecsocket.alexandria.desc
 io.github.aecsocket.alexandria.extension
 io.github.aecsocket.alexandria.serializer
-io.github.aecsocket.alexandria.sync
 module:alexandria-common
 io.github.aecsocket.alexandria.hook
 io.github.aecsocket.alexandria.hook.extension
+module:alexandria-fabric
+io.github.aecsocket.alexandria.fabric
+io.github.aecsocket.alexandria.fabric.extension
+io.github.aecsocket.alexandria.fabric.mixin
+io.github.aecsocket.alexandria.fabric.serializer
 module:alexandria-paper
 io.github.aecsocket.alexandria.paper
 io.github.aecsocket.alexandria.paper.extension
