@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InteractionGroup</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>rattle-parent</span>            </a>    </div>
+    <div>0.1.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":rattle-api:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="rattle-api::io.github.aecsocket.rattle/InteractionGroup///PointingToDeclaration//-1932649229">
+  <div class="breadcrumbs"><a href="../../index.html">rattle-api</a><span class="delimiter">/</span><a href="../index.html">io.github.aecsocket.rattle</a><span class="delimiter">/</span><span class="current">InteractionGroup</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Interaction</span><wbr><span><span>Group</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">InteractionGroup</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>memberships<span class="token operator">: </span><a href="../-interaction-field/index.html">InteractionField</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>filter<span class="token operator">: </span><a href="../-interaction-field/index.html">InteractionField</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Specifies which <a href="../-collider/index.html">Collider</a>s a collider will collide with, by using bit masks of <a href="../-interaction-layer/index.html">InteractionLayer</a>s. This object stores two <a href="../-interaction-field/index.html">InteractionField</a>s:</p><ul><li><p class="paragraph"><a href="memberships.html">memberships</a> - which layers this collider is a part of</p></li><li><p class="paragraph"><a href="filter.html">filter</a> - which layers this collider may collide with</p></li></ul><p class="paragraph">If a collider collides with layer <code class="lang-kotlin">X</code>, it means that the collider will collide with any others which have bit <code class="lang-kotlin">X</code> set in their <a href="memberships.html">memberships</a> field.</p><p class="paragraph">If we want to specify a collider which is part of the layers <code class="lang-kotlin">[0, 2, 3]</code> and can collide with the layers <code class="lang-kotlin">[2]</code>, we specify the fields as:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">          index  3 2 1 0<br>    memberships  1 1 0 1<br>         filter  0 1 0 0</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">which is written as</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">InteractionGroup(<br>    memberships = InteractionField.fromRaw(0b1101),<br>    filter = InteractionField.fromRaw(0b0100),<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">For details on what this interaction group will do exactly, see <a href="../-collider/index.html">Collider</a>.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>memberships</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Which layers this collider is a part of.</p></div></div></div></div><div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>filter</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Which layers this collider may collide with.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-301998223%2FConstructors%2F-1932649229" anchor-label="InteractionGroup" id="-301998223%2FConstructors%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-interaction-group.html"><span>Interaction</span><wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-301998223%2FConstructors%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memberships<span class="token operator">: </span><a href="../-interaction-field/index.html">InteractionField</a><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><a href="../-interaction-field/index.html">InteractionField</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1715080606%2FClasslikes%2F-1932649229" anchor-label="Companion" id="1715080606%2FClasslikes%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1715080606%2FClasslikes%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="837348587%2FProperties%2F-1932649229" anchor-label="filter" id="837348587%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="filter.html"><span><span>filter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="837348587%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="filter.html">filter</a><span class="token operator">: </span><a href="../-interaction-field/index.html">InteractionField</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1898930918%2FProperties%2F-1932649229" anchor-label="memberships" id="-1898930918%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="memberships.html"><span><span>memberships</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1898930918%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="memberships.html">memberships</a><span class="token operator">: </span><a href="../-interaction-field/index.html">InteractionField</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

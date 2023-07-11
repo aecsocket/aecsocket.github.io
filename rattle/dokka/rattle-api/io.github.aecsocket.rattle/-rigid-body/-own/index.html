@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Own</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../../index.html">
+<span>rattle-parent</span>            </a>    </div>
+    <div>0.1.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":rattle-api:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="rattle-api::io.github.aecsocket.rattle/RigidBody.Own///PointingToDeclaration//-1932649229">
+  <div class="breadcrumbs"><a href="../../../index.html">rattle-api</a><span class="delimiter">/</span><a href="../../index.html">io.github.aecsocket.rattle</a><span class="delimiter">/</span><a href="../index.html">RigidBody</a><span class="delimiter">/</span><span class="current">Own</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Own</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Own</a> : <a href="../-mut/index.html">RigidBody.Mut</a>, <a href="../../-destroyable/index.html">Destroyable</a></div><p class="paragraph">Mutable owned interface for a <a href="../index.html">RigidBody</a>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="273424947%2FProperties%2F-1932649229" anchor-label="angularDamping" id="273424947%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../angular-damping.html"><span>angular</span><wbr><span><span>Damping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="273424947%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../angular-damping.html">angularDamping</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The angular damping factor (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2094310584%2FProperties%2F-1932649229" anchor-label="angularVelocity" id="-2094310584%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../angular-velocity.html"><span>angular</span><wbr><span><span>Velocity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2094310584%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../angular-velocity.html">angularVelocity</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></div><div class="brief "><p class="paragraph">How fast and in what direction the body is moving around its angular axes, in radians/second. This is represented as an axis-angle vector, where the magnitude is the angle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1703652293%2FProperties%2F-1932649229" anchor-label="appliedForce" id="1703652293%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../applied-force.html"><span>applied</span><wbr><span><span>Force</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1703652293%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../applied-force.html">appliedForce</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></div><div class="brief "><p class="paragraph">How much force has been applied by the user in this simulation step.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1956433600%2FProperties%2F-1932649229" anchor-label="appliedTorque" id="1956433600%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../applied-torque.html"><span>applied</span><wbr><span><span>Torque</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1956433600%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../applied-torque.html">appliedTorque</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></div><div class="brief "><p class="paragraph">How much torque has been applied by the user in this simulation step.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="117830824%2FProperties%2F-1932649229" anchor-label="colliders" id="117830824%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../colliders.html"><span><span>colliders</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="117830824%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../colliders.html">colliders</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-collider-key/index.html">ColliderKey</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The handles to colliders attached to this body.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-244464553%2FProperties%2F-1932649229" anchor-label="gravityScale" id="-244464553%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../gravity-scale.html"><span>gravity</span><wbr><span><span>Scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-244464553%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../gravity-scale.html">gravityScale</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The factor by which gravity is applied to this body. Default of 1.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="492486183%2FProperties%2F-1932649229" anchor-label="isCcdActive" id="492486183%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-ccd-active.html"><span>is</span><wbr><span>Ccd</span><wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="492486183%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../is-ccd-active.html">isCcdActive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this body is currently being simulated with CCD (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1077125868%2FProperties%2F-1932649229" anchor-label="isCcdEnabled" id="1077125868%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-ccd-enabled.html"><span>is</span><wbr><span>Ccd</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1077125868%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../is-ccd-enabled.html">isCcdEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this body has CCD enabled (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="300931742%2FProperties%2F-1932649229" anchor-label="isSleeping" id="300931742%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-sleeping.html"><span>is</span><wbr><span><span>Sleeping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="300931742%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../is-sleeping.html">isSleeping</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this body is currently sleeping (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2111930954%2FProperties%2F-1932649229" anchor-label="linearDamping" id="2111930954%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../linear-damping.html"><span>linear</span><wbr><span><span>Damping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2111930954%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../linear-damping.html">linearDamping</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The linear damping factor (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-935199215%2FProperties%2F-1932649229" anchor-label="linearVelocity" id="-935199215%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../linear-velocity.html"><span>linear</span><wbr><span><span>Velocity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-935199215%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../linear-velocity.html">linearVelocity</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></div><div class="brief "><p class="paragraph">How fast and in what direction the body is moving linearly, in meters/second.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-749156758%2FProperties%2F-1932649229" anchor-label="position" id="-749156758%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-749156758%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../position.html">position</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></div><div class="brief "><p class="paragraph">The absolute position of this body in the world.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-988127111%2FProperties%2F-1932649229" anchor-label="type" id="-988127111%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-988127111%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../type.html">type</a><span class="token operator">: </span><a href="../../-rigid-body-type/index.html">RigidBodyType</a></div><div class="brief "><p class="paragraph">The body type (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1514808583%2FFunctions%2F-1932649229" anchor-label="angularDamping" id="-1514808583%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="angular-damping.html"><span>angular</span><wbr><span><span>Damping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1514808583%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="angular-damping.html"><span class="token function">angularDamping</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2100908655%2FFunctions%2F-1932649229" anchor-label="angularVelocity" id="2100908655%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="angular-velocity.html"><span>angular</span><wbr><span><span>Velocity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2100908655%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="angular-velocity.html"><span class="token function">angularVelocity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="94809811%2FFunctions%2F-1932649229" anchor-label="applyForce" id="94809811%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/apply-force.html"><span>apply</span><wbr><span><span>Force</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="94809811%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/apply-force.html"><span class="token function">applyForce</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">force<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-d-y-n-a-m-i-c/index.html">RigidBodyType.DYNAMIC</a>: applies a (linear) force in Newtons at the center of the body.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1955254018%2FFunctions%2F-1932649229" anchor-label="applyForceAt" id="-1955254018%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/apply-force-at.html"><span>apply</span><wbr><span>Force</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1955254018%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/apply-force-at.html"><span class="token function">applyForceAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">force<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span><span class="token punctuation">, </span></span><span class="parameter ">at<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-d-y-n-a-m-i-c/index.html">RigidBodyType.DYNAMIC</a>: applies a (linear) force in Newtons at a specific position on the body, taking into account rotation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1285793527%2FFunctions%2F-1932649229" anchor-label="applyImpulse" id="-1285793527%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/apply-impulse.html"><span>apply</span><wbr><span><span>Impulse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1285793527%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/apply-impulse.html"><span class="token function">applyImpulse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">impulse<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-d-y-n-a-m-i-c/index.html">RigidBodyType.DYNAMIC</a>: applies a (linear) impulse - instantaneous change in force - at the center of the body.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="626009480%2FFunctions%2F-1932649229" anchor-label="applyImpulseAt" id="626009480%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/apply-impulse-at.html"><span>apply</span><wbr><span>Impulse</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="626009480%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/apply-impulse-at.html"><span class="token function">applyImpulseAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">impulse<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span><span class="token punctuation">, </span></span><span class="parameter ">at<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-d-y-n-a-m-i-c/index.html">RigidBodyType.DYNAMIC</a>: applies a (linear) impulse - instantaneous change in force - at a specific position on the body, taking into account rotation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="288476944%2FFunctions%2F-1932649229" anchor-label="applyTorque" id="288476944%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/apply-torque.html"><span>apply</span><wbr><span><span>Torque</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="288476944%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/apply-torque.html"><span class="token function">applyTorque</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">torque<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-d-y-n-a-m-i-c/index.html">RigidBodyType.DYNAMIC</a>: applies an (angular) torque, causing a change in rotation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-560723917%2FFunctions%2F-1932649229" anchor-label="applyTorqueImpulse" id="-560723917%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/apply-torque-impulse.html"><span>apply</span><wbr><span>Torque</span><wbr><span><span>Impulse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-560723917%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/apply-torque-impulse.html"><span class="token function">applyTorqueImpulse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">torqueImpulse<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-d-y-n-a-m-i-c/index.html">RigidBodyType.DYNAMIC</a>: applies an (angular) torque impulse - instantaneous change in torque - causing a change in rotation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1428180823%2FFunctions%2F-1932649229" anchor-label="canSleep" id="-1428180823%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-sleep.html"><span>can</span><wbr><span><span>Sleep</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1428180823%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="can-sleep.html"><span class="token function">canSleep</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div><div class="brief "><p class="paragraph">Sets if this body is able to fall asleep by itself (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1303109510%2FFunctions%2F-1932649229" anchor-label="destroy" id="1303109510%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../-destroyable/destroy.html"><span><span>destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1303109510%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../-destroyable/destroy.html"><span class="token function">destroy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="985494869%2FFunctions%2F-1932649229" anchor-label="gravityScale" id="985494869%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gravity-scale.html"><span>gravity</span><wbr><span><span>Scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="985494869%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="gravity-scale.html"><span class="token function">gravityScale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1020946217%2FFunctions%2F-1932649229" anchor-label="isCcdEnabled" id="1020946217%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-ccd-enabled.html"><span>is</span><wbr><span>Ccd</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1020946217%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-ccd-enabled.html"><span class="token function">isCcdEnabled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1352782810%2FFunctions%2F-1932649229" anchor-label="kineticEnergy" id="-1352782810%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../kinetic-energy.html"><span>kinetic</span><wbr><span><span>Energy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1352782810%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kinetic-energy.html"><span class="token function">kineticEnergy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Calculates the kinetic energy of this body.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1454189874%2FFunctions%2F-1932649229" anchor-label="linearDamping" id="1454189874%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="linear-damping.html"><span>linear</span><wbr><span><span>Damping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1454189874%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="linear-damping.html"><span class="token function">linearDamping</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-592451480%2FFunctions%2F-1932649229" anchor-label="linearVelocity" id="-592451480%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="linear-velocity.html"><span>linear</span><wbr><span><span>Velocity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-592451480%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="linear-velocity.html"><span class="token function">linearVelocity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DVec3///PointingToDeclaration/">DVec3</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1520461781%2FFunctions%2F-1932649229" anchor-label="moveTo" id="1520461781%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/move-to.html"><span>move</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1520461781%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/move-to.html"><span class="token function">moveTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">For <a href="../../-rigid-body-type/-k-i-n-e-m-a-t-i-c/index.html">RigidBodyType.KINEMATIC</a>: sets this body's kinematic target to a specific position in the world, and the physics engine will apply the correct velocities to move it to that position. In this way, the movement is physically accurate (pushing other physics objects out of the way) but this body will not be pushed by others.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-920586510%2FFunctions%2F-1932649229" anchor-label="position" id="-920586510%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-920586510%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="position.html"><span class="token function">position</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div><div class="brief "><p class="paragraph">Sets the absolute position of this body in the world.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-81850670%2FFunctions%2F-1932649229" anchor-label="sleep" id="-81850670%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/sleep.html"><span><span>sleep</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-81850670%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/sleep.html"><span class="token function">sleep</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Puts this body to sleep (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1386972687%2FFunctions%2F-1932649229" anchor-label="type" id="-1386972687%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1386972687%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="type.html"><span class="token function">type</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-rigid-body-type/index.html">RigidBodyType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">RigidBody.Own</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2016667529%2FFunctions%2F-1932649229" anchor-label="wakeUp" id="-2016667529%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mut/wake-up.html"><span>wake</span><wbr><span><span>Up</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2016667529%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-mut/wake-up.html"><span class="token function">wakeUp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">strong<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wakes this body up if it is sleeping (see <a href="../index.html">RigidBody</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

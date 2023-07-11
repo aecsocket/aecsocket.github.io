@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PhysicsEngine</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>rattle-parent</span>            </a>    </div>
+    <div>0.1.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":rattle-api:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="rattle-api::io.github.aecsocket.rattle/PhysicsEngine///PointingToDeclaration//-1932649229">
+  <div class="breadcrumbs"><a href="../../index.html">rattle-api</a><span class="delimiter">/</span><a href="../index.html">io.github.aecsocket.rattle</a><span class="delimiter">/</span><span class="current">PhysicsEngine</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Physics</span><wbr><span><span>Engine</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">PhysicsEngine</a> : <a href="../-destroyable/index.html">Destroyable</a></div><p class="paragraph">The entry point to the physics system; an engine represents the manager of all physics resources and structures. An engine is tied to a specific physics backend, and allows creating native objects to interface with the physics backend.</p><p class="paragraph">The units used throughout the engine are metric: <strong>meters, radians, seconds, kilograms</strong>.</p><h1 class=""> Thread safety</h1><p class="paragraph">Physics structures used by the engine are not thread-safe, so must be treated carefully when interacting with them from multiple threads. Typically, the user of e.g. a <a href="../-physics-space/index.html">PhysicsSpace</a> or <a href="../-rigid-body/index.html">RigidBody</a> would wrap accesses to that object in a lock. To enforce this, you can specify a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html">java.util.concurrent.locks.ReentrantLock</a> on some structures. Before any read or write access, this lock will be checked to make sure the current thread holds an exclusive lock. If it does not, an exception will be thrown.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="2021632803%2FClasslikes%2F-1932649229" anchor-label="Builder" id="2021632803%2FClasslikes%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2021632803%2FClasslikes%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-builder/index.html">Builder</a></div><div class="brief "><p class="paragraph">Utility class for building a <a href="index.html">PhysicsEngine</a>, allowing defining properties required for the engine.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1400476092%2FProperties%2F-1932649229" anchor-label="name" id="-1400476092%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400476092%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">A human-readable, branded name for the physics backend.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1834946061%2FProperties%2F-1932649229" anchor-label="version" id="-1834946061%2FProperties%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="version.html"><span><span>version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1834946061%2FProperties%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="version.html">version</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">A human-readable version string for the physics backend. This is <strong>not</strong> required to follow any conventions like SemVer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="642863294%2FFunctions%2F-1932649229" anchor-label="createBody" id="642863294%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-body.html"><span>create</span><wbr><span><span>Body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="642863294%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-body.html"><span class="token function">createBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../-rigid-body-type/index.html">RigidBodyType</a><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-rigid-body/-own/index.html">RigidBody.Own</a></div><div class="brief "><p class="paragraph">Creates a <a href="../-rigid-body/index.html">RigidBody</a> with default parameters, which is not attached to any <a href="../-physics-space/index.html">PhysicsSpace</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-202025895%2FFunctions%2F-1932649229" anchor-label="createCollider" id="-202025895%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-collider.html"><span>create</span><wbr><span><span>Collider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-202025895%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-collider.html"><span class="token function">createCollider</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">shape<span class="token operator">: </span><a href="../-shape/index.html">Shape</a><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><a href="../-collider/-start/index.html">Collider.Start</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-collider/-own/index.html">Collider.Own</a></div><div class="brief "><p class="paragraph">Creates a <a href="../-collider/index.html">Collider</a> with default parameters, which is not attached to any <a href="../-rigid-body/index.html">RigidBody</a> or <a href="../-physics-space/index.html">PhysicsSpace</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="271386525%2FFunctions%2F-1932649229" anchor-label="createJoint" id="271386525%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-joint.html"><span>create</span><wbr><span><span>Joint</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="271386525%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-joint.html"><span class="token function">createJoint</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-joint/index.html">Joint</a></div><div class="brief "><p class="paragraph">Creates a <a href="../-joint/index.html">Joint</a> with default parameters, which is not attached to any <a href="../-rigid-body/index.html">RigidBody</a> or <a href="../-physics-space/index.html">PhysicsSpace</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1504547357%2FFunctions%2F-1932649229" anchor-label="createShape" id="-1504547357%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-shape.html"><span>create</span><wbr><span><span>Shape</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1504547357%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-shape.html"><span class="token function">createShape</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">geom<span class="token operator">: </span><a href="../-geometry/index.html">Geometry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-shape/index.html">Shape</a></div><div class="brief "><p class="paragraph">Creates a baked, physics-ready form of a <a href="../-geometry/index.html">Geometry</a>, which starts with a reference count of 1. See <a href="../-ref-counted/index.html">RefCounted</a> for information on using ref-counted objects.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="989890998%2FFunctions%2F-1932649229" anchor-label="createSpace" id="989890998%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-space.html"><span>create</span><wbr><span><span>Space</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="989890998%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-space.html"><span class="token function">createSpace</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">settings<span class="token operator">: </span><a href="../-physics-space/-settings/index.html">PhysicsSpace.Settings</a><span class="token operator"> = </span>PhysicsSpace.Settings()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-physics-space/index.html">PhysicsSpace</a></div><div class="brief "><p class="paragraph">Creates an independent container for physics structures from the specified settings.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1303109510%2FFunctions%2F-1932649229" anchor-label="destroy" id="1303109510%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-destroyable/destroy.html"><span><span>destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1303109510%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-destroyable/destroy.html"><span class="token function">destroy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="86530659%2FFunctions%2F-1932649229" anchor-label="stepSpaces" id="86530659%2FFunctions%2F-1932649229" data-filterable-set=":rattle-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-api:dokkaHtmlPartial/main" data-filterable-set=":rattle-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="step-spaces.html"><span>step</span><wbr><span><span>Spaces</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="86530659%2FFunctions%2F-1932649229"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="step-spaces.html"><span class="token function">stepSpaces</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dt<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">spaces<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-physics-space/index.html">PhysicsSpace</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Simulates an update for a collection of spaces in parallel, with the given time step.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

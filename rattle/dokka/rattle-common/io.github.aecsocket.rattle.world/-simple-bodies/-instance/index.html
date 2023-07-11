@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Instance</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../../index.html">
+<span>rattle-parent</span>            </a>    </div>
+    <div>0.1.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":rattle-common:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="rattle-common::io.github.aecsocket.rattle.world/SimpleBodies.Instance///PointingToDeclaration//869893418">
+  <div class="breadcrumbs"><a href="../../../index.html">rattle-common</a><span class="delimiter">/</span><a href="../../index.html">io.github.aecsocket.rattle.world</a><span class="delimiter">/</span><a href="../index.html">SimpleBodies</a><span class="delimiter">/</span><span class="current">Instance</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Instance</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">inner </span><span class="token keyword">class </span><a href="index.html">Instance</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>collider<span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-collider-key/index.html">ColliderKey</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body<span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-rigid-body-key/index.html">RigidBodyKey</a><span class="token punctuation">, </span></span><span class="parameter ">scale<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/FVec3///PointingToDeclaration/">FVec3</span><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="2012858751%2FConstructors%2F869893418" anchor-label="Instance" id="2012858751%2FConstructors%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-instance.html"><span><span>Instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2012858751%2FConstructors%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">collider<span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-collider-key/index.html">ColliderKey</a><span class="token punctuation">, </span></span><span class="parameter ">body<span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-rigid-body-key/index.html">RigidBodyKey</a><span class="token punctuation">, </span></span><span class="parameter ">scale<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/FVec3///PointingToDeclaration/">FVec3</span><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-971047015%2FProperties%2F869893418" anchor-label="body" id="-971047015%2FProperties%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body.html"><span><span>body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-971047015%2FProperties%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="body.html">body</a><span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-rigid-body-key/index.html">RigidBodyKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-392351097%2FProperties%2F869893418" anchor-label="collider" id="-392351097%2FProperties%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="collider.html"><span><span>collider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392351097%2FProperties%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="collider.html">collider</a><span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-collider-key/index.html">ColliderKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-743807162%2FProperties%2F869893418" anchor-label="destroyed" id="-743807162%2FProperties%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="destroyed.html"><span><span>destroyed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-743807162%2FProperties%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="destroyed.html">destroyed</a><span class="token operator">: </span><a href="../../../../rattle-api/io.github.aecsocket.rattle/-destroy-flag/index.html">DestroyFlag</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1926068494%2FProperties%2F869893418" anchor-label="position" id="-1926068494%2FProperties%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926068494%2FProperties%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="position.html">position</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.klam/DIso3///PointingToDeclaration/">DIso3</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1698773669%2FProperties%2F869893418" anchor-label="render" id="1698773669%2FProperties%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="render.html"><span><span>render</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1698773669%2FProperties%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="render.html">render</a><span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.alexandria/ItemRender///PointingToDeclaration/">ItemRender</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="578103016%2FFunctions%2F869893418" anchor-label="onTrack" id="578103016%2FFunctions%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-track.html"><span>on</span><wbr><span><span>Track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="578103016%2FFunctions%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-track.html"><span class="token function">onTrack</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">render<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.alexandria/ItemRender///PointingToDeclaration/">ItemRender</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-742320529%2FFunctions%2F869893418" anchor-label="onUntrack" id="-742320529%2FFunctions%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-untrack.html"><span>on</span><wbr><span><span>Untrack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-742320529%2FFunctions%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-untrack.html"><span class="token function">onUntrack</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">render<span class="token operator">: </span><span data-unresolved-link="io.github.aecsocket.alexandria/ItemRender///PointingToDeclaration/">ItemRender</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="184985971%2FFunctions%2F869893418" anchor-label="onUpdate" id="184985971%2FFunctions%2F869893418" data-filterable-set=":rattle-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":rattle-common:dokkaHtmlPartial/main" data-filterable-set=":rattle-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-update.html"><span>on</span><wbr><span><span>Update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="184985971%2FFunctions%2F869893418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rattle-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-update.html"><span class="token function">onUpdate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
