@@ -8,7 +8,6 @@ io.github.aecsocket.alexandria.extension
 io.github.aecsocket.alexandria.serializer
 module:alexandria-common
 io.github.aecsocket.alexandria.hook
-io.github.aecsocket.alexandria.hook.extension
 module:alexandria-fabric
 io.github.aecsocket.alexandria.fabric
 io.github.aecsocket.alexandria.fabric.extension
