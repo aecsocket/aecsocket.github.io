@@ -9,6 +9,9 @@ io.github.aecsocket.rattle.impl
 io.github.aecsocket.rattle.serializer
 io.github.aecsocket.rattle.stats
 io.github.aecsocket.rattle.world
+module:rattle-fabric
+io.github.aecsocket.rattle.fabric
+io.github.aecsocket.rattle.fabric.mixin
 module:rattle-paper
 io.github.aecsocket.rattle.paper
 module:rattle-rapier

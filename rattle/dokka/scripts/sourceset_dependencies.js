@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":rattle-paper:dokkaHtmlPartial/main":[],":rattle-rapier:dokkaHtmlPartial/main":[],":rattle-api:dokkaHtmlPartial/main":[],":rattle-common:dokkaHtmlPartial/main":[]}'
+sourceset_dependencies = '{":rattle-paper:dokkaHtmlPartial/main":[],":rattle-fabric:dokkaHtmlPartial/main":[],":rattle-rapier:dokkaHtmlPartial/main":[],":rattle-api:dokkaHtmlPartial/main":[],":rattle-common:dokkaHtmlPartial/main":[]}'
